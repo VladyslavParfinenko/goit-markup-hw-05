@@ -620,8 +620,14 @@ color: #FFFFFF;
   position: relative;
   }
 
+  .img-thumb{
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 250ms cubic-bezier(0.4,0,0.2,1);
+  }
 .link-works:hover .img-thumb{
   opacity: 1;
+  transform: translateY(0);
 }
 .links-text{
   position: absolute;
@@ -652,6 +658,7 @@ color: #FFFFFF;
 }
 .image-backdrop{
   position: relative;
+  overflow: hidden;
 }
 .backdrop{
   position: fixed;
